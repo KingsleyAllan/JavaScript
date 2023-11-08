@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+</head>
+<body>
+
+
+    <script>
+        // Defining a class
+        
+            class Colors{
+                constructor(name, branch) {
+                    this.name = name;
+                    this.branch = branch;
+                }
+        
+                colorBranches() {
+                    console.log(`This color is called ${this.name} which is a branch from the color ${this.branch}.`);
+                }
+            }
+        
+            // Creating the object using the class
+        
+            let color1 = new Colors("Coffee", "Brown");
+            let color2 = new Colors("Lime", "Green");
+            let color3 = new Colors("Sky", "Bue");
+            let color4 = new Colors("Tarquois", "Purple");
+        
+            // color1. colorBranches();
+            // color2. colorBranches();
+            // color3. colorBranches();
+            // color4. colorBranches();
+        
+            // Inheritance (sub-classes)
+        
+            class Student extends Colors{
+                constructor(name, branch, richSaturation) {
+                    super(name, branch);
+                    this. richSaturation = richSaturation;
+                }
+        
+                shadeSaturation() {
+                    console.log(`This color is called ${this.name} and it has a ${this.richSaturation} saturation added on top of its origin color.`);
+                }
+        
+                
+        
+        
+            }
+        </script>
+</body>
+</html>

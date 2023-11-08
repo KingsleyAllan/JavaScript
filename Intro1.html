@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java</title>
+</head>
+<body>
+    <!-- <div id="code">Lorem ipsum dolor sit amet.</div> -->
+    <!-- <button type="button" onmouseover="start()">Call changes</button><br><br> -->
+
+    <!-- <div id="dada"></div> -->
+    <!-- <button  type="button" onclick="mama()">Balance</button><br><br> -->
+
+    <div id="money"></div> 
+     <button type="button" onmouseover="Mula()">Check Balance.</button> 
+
+    <div id="users"></div>
+    <button type="button" onclick="supplier()">Check Balance.</button>
+
+
+
+    <script>
+        // function start() {
+            // document.getElementById("code").innerHTML = "CSS"
+            
+        // }
+
+        // function mama() {
+            // document.getElementById("dada").innerHTML = "Hello Debora...Your account balance is ksh." + balance
+            
+        // }
+
+        function Mula() {
+            document.getElementById("money").innerHTML= `Dear ${customerName} your balance was ksh ${balance}. You have deposited ksh. ${deposit} and your new balance is ksh. ${currentBalance}`
+        }
+
+        function supplier() {
+            document.getElementById("users").innerHTML = `RQ3eRqDF3 You have received ksh. ${deposit} from ${customerName}. Your new balance is ksh. ${currentBalance}`
+            
+        }
+
+
+        balance=3043
+        deposit=1000
+        currentBalance= balance + deposit
+        customerName="Dana"
+    </script>
+</body>
+</html>
